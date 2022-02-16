@@ -1,3 +1,67 @@
 body {
     background-color: rgb(211, 211, 211);
 }
+
+.center {
+    text-align: center;
+}
+
+a {
+    color: purple;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(200, 25, 200);
+}
+
+.main-index {
+    background-color: rgb(153, 153, 153);
+    padding: 50px;
+}
+
+.header ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.header ul li {
+    margin: 0 15px 0 15px;
+    display: inline;
+}
+
+.icon-sized {
+    width: 50px;
+    height: 50px;
+}
+
+.medium-sized {
+    width: 50%;
+    height: 50%;
+}
+
+.position-50 {
+    position: relative;
+    bottom: 20px;
+}
+
+.icon-box {
+    position: relative;
+    bottom: 30px;
+    right: 30px;
+}
+
+.positions-1 {
+    position: relative;
+    top: 10%;
+    left: 95%;
+}
+
+.btn {
+    background-color: #383f4f;
+    color: #d3bc8e;
+    display: inline-block;
+    padding: 10px 58px;
+    border-radius: 29px;
+    cursor: pointer;
+}

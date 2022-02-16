@@ -22,6 +22,7 @@ count.onclick = () => {
             total.innerHTML = totals;
             welkin.innerHTML = days.value + " Day";
             day.innerHTML = days.value
+            bps.innerHTML = "No";
         } else if(bp.checked == true){
             let totals = primogems + 600;
             total.innerHTML = totals;
