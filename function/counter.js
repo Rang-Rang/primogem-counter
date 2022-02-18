@@ -9,7 +9,7 @@ const bpDisplay = document.getElementById("bp-value");
 
 total.innerHTML = 0;
 
-count.onclick = () => {
+const onChangeHandler = () => {
 	let primogems = days.value * 60;
 	if (welkins.checked == true && bp.checked == true) {
 		let totals = primogems + 90 + 600;
@@ -40,3 +40,7 @@ count.onclick = () => {
 	welkinDisplay.innerHTML = "Without";
 	bpDisplay.innerHTML = "No";
 };
+
+days.onchange = () => onChangeHandler();
+welkins.onchange = () => onChangeHandler();
+bp.onchange = () => onChangeHandler();
