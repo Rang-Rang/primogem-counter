@@ -7,7 +7,7 @@ const dayDisplay = document.getElementById("days-value");
 const welkinDisplay = document.getElementById("welkin-value");
 const bpDisplay = document.getElementById("bp-value");
 
-total.innerHTML = 0;
+total.innerHTML = 60;
 
 const onChangeHandler = () => {
 	let primogems = days.value * 60;
