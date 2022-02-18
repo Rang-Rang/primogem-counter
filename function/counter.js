@@ -1,36 +1,42 @@
-const days = document.getElementById('days');
-const welkins = document.getElementById('welkin');
-const bp = document.getElementById('bp');
-const count = document.getElementById('count');
-const total = document.getElementById('total');
-const day = document.getElementById('days-value');
-const welkin = document.getElementById('welkin-value');
-const bps = document.getElementById('bp-value');
+const days = document.getElementById("days");
+const welkins = document.getElementById("welkin");
+const bp = document.getElementById("bp");
+const count = document.getElementById("count");
+const total = document.getElementById("total");
+const dayDisplay = document.getElementById("days-value");
+const welkinDisplay = document.getElementById("welkin-value");
+const bpDisplay = document.getElementById("bp-value");
 
 total.innerHTML = 0;
 
 count.onclick = () => {
-        let primogems = days.value * 60;
-        if(welkins.checked == true && bp.checked == true){
-            let totals = primogems + 90 + 600;
-            total.innerHTML = totals;
-            welkin.innerHTML = days.value + " Day";
-            day.innerHTML = days.value;
-            bps.innerHTML = "On";
-        } else if(welkins.checked == true){
-            let totals = primogems + 90;
-            total.innerHTML = totals;
-            welkin.innerHTML = days.value + " Day";
-            day.innerHTML = days.value
-            bps.innerHTML = "No";
-        } else if(bp.checked == true){
-            let totals = primogems + 600;
-            total.innerHTML = totals;
-            bps.innerHTML = "On";
-        } else {
-            total.innerHTML = primogems;
-            day.innerHTML = days.value;
-            welkin.innerHTML = "Without";
-            bps.innerHTML = "No";
-        }
-}
+	let primogems = days.value * 60;
+	if (welkins.checked == true && bp.checked == true) {
+		let totals = primogems + 90 + 600;
+		total.innerHTML = totals;
+		welkinDisplay.innerHTML = days.value + " Day";
+		dayDisplay.innerHTML = days.value;
+		bpDisplay.innerHTML = "With";
+		return;
+	}
+	if (welkins.checked == true) {
+		let totals = primogems + 90;
+		total.innerHTML = totals;
+		welkinDisplay.innerHTML = days.value + " Day";
+		dayDisplay.innerHTML = days.value;
+		bpDisplay.innerHTML = "No";
+		return;
+	}
+	if (bp.checked == true) {
+		let totals = primogems + 600;
+		total.innerHTML = totals;
+		welkinDisplay.innerHTML = days.value + " Day";
+		dayDisplay.innerHTML = days.value;
+		bpDisplay.innerHTML = "With";
+		return;
+	}
+	total.innerHTML = primogems;
+	dayDisplay.innerHTML = days.value;
+	welkinDisplay.innerHTML = "Without";
+	bpDisplay.innerHTML = "No";
+};

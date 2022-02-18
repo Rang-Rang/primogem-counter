@@ -1,85 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Counter</title>
-    
-    <!-- icon: -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
-    <link rel="manifest" href="icon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Counter</title>
 
-    <div class="header">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contributors.html">Contributors</a></li>
-            <li><a href="help.html">Help</a></li>
-        </ul>
-    </div>
-    
-    <h1 class="center">Primogem Counter</h1>
+		<!-- icon: -->
+		<link rel="stylesheet" href="css/styles.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="icon/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="icon/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="icon/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="icon/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="icon/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="icon/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="icon/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="icon/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="icon/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="icon/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="icon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="icon/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="icon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="icon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta
+			name="msapplication-TileImage"
+			content="icon/ms-icon-144x144.png"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+	</head>
+	<body>
+		<header>
+			<a href="./index.html"><img class="logo" src="./image/logo.png" /></a>
+			<input type="checkbox" class="nav-toggle" id="nav-toggle" />
+			<label for="nav-toggle" class="nav-toggle-label">&#9776</label>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="contributors.html">Contributors</a></li>
+					<li><a href="help.html">Help</a></li>
+				</ul>
+			</nav>
+		</header>
 
-    <div class="main-index">
-        <img src="image/icon-box.png" alt="icon-box" class="icon-box">
-        <br>
-        <label for="days">Days:</label>
-        <input type="number" id="days" min="1" value="1">
-        
-        <br>
-        <br>
+		<div class="bg-container">
+			<img src="image/current-bp.png" alt="Battle Pass" class="bp-img" />
+		</div>
 
-        <div class="welkin-countainer">
-            <img src="image/welkin.png" alt="Blessing of the Welkin Moon" class="icon-sized">
-            <label for="welkin" class="position-50">Blessing of the welkin moon?</label>
-            <input type="checkbox" id="welkin" class="position-50">
-        </div>
+		<div class="options-container">
 
-        <br>
+			<div class="days-container">
+				<label for="days">Days</label>
+				<input type="number" id="days" min="1" value="1" />
+			</div>
+			
+			<div class="welkin-container">
+				<img
+					src="image/welkin.png"
+					alt="Blessing of the Welkin Moon"
+					class="icon-sized"
+				/>
+				<label for="welkin">Blessing of the welkin moon?</label>
+				<input type="checkbox" id="welkin"/>
+			</div>
 
-        <div class="bp-container">
-            <label for="bp">
-                <img src="image/current-bp.png" alt="Battle Pass" class="medium-sized">
-                <br>
-                <span>Battle Pass?</span>
-            </label>
-            <input type="checkbox" id="bp">
-        </div>
+			<div class="bp-container">
+				<img
+					src="image/System_Battle_Pass.png"
+					alt="Battle Pass"
+					class="medium-sized"
+				/>
+				<label for="bp">Battle Pass?</label>
+				<input type="checkbox" id="bp" />
+			</div>
 
-        <br>
+		</div>
 
-        <!-- <input type="button" value="Counting" id="count"> -->
+			<!-- <input type="button" value="Counting" id="count"> -->
+			<div class="total-container">
+				<h3>Total Primogems</h3>
+				<div class="total-count">
+					<img src="image/primogem.png" alt="primogem" class="icon-box" />
+					<p id="total"></p>
+				</div>
+				
+				<div id="count" class="btn"><p>Confirm</p></div>
+			</div>
+			
+			
+			<div class="footer">
+			<p>
+				<span id="days-value"></span> Day daily Commision,
+				<span id="welkin-value"></span> Blessing of The Welkin Moon,
+				<span id="bp-value"></span> Battle Pass
+			</p>
+			<p>Created by <a href="https://www.youtube.com/channel/UCIGyyDGFt2SWtKgxXjra_fg" target="_blank" rel="noopener noreferrer">@RangRang</a></p>
+			<p>Designed by <a href="https://www.instagram.com/marv.11/" target="_blank" rel="noopener noreferrer">@marv.11</a> / <a href="https://discordapp.com/users/272255977435430912" target="_blank" rel="noopener noreferrer">nyahu#9909</a></p>
+			All Rights Reserved. Unaffiliated with <span>MiHoYo</span> // <span>Genshin Impact</span>
+		</div>
 
-        <h1>Total Primogems:</h1>
-        <h2 id="total"></h2>
-    
-        <p><span id="days-value"></span> Day daily Commision, <span id="welkin-value"></span> Blessing of The Welkin Moon, <span id="bp-value"></span> Battle Pass</p>
-        
-        <div id="count" class="btn">
-            Counting
-        </div>
-    </div>
-
-    <div class="footer">
-        <p><b>Note: </b>Styling and more features are coming soon!</p>
-    </div>
-
-    <script src="function/counter.js"></script>
-</body>
+		<script src="function/counter.js"></script>
+	</body>
 </html>
