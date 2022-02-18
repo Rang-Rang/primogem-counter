@@ -9,8 +9,16 @@ const bpDisplay = document.getElementById("bp-value");
 
 total.innerHTML = 60;
 
+function isReallyNumber(data) {
+	return typeof data === "number" && !isNaN(data);
+}
+
 const onChangeHandler = () => {
 	let primogems = days.value * 60;
+	if (days.value == "" || isReallyNumber(days.value)) {
+		total.innerHTML = "Invalid Input";
+		return;
+	}
 	if (welkins.checked == true && bp.checked == true) {
 		let totals = primogems + 90 + 600;
 		total.innerHTML = totals;
