@@ -314,7 +314,7 @@ nav ul li a:hover::after {
 
 .main-contributors {
 	font-family: BonoboBold;
-	font-size: 1em;
+	font-size: 1.5em;
 	margin-left: 4em;
 	margin-top: 2em;
 }
@@ -348,6 +348,7 @@ nav ul li a:hover::after {
 	width: 100%;
 	height: auto;
 	padding: 20px;
+	font-size: 1.5em;
 }
 
 .footer-bottom span {
@@ -400,14 +401,5 @@ nav ul li a:hover::after {
 		justify-content: center;
 		flex-direction: row;
 		gap: 5em;
-	}
-
-	.main-contributors {
-		font-size: 1.5em;
-		font-family: BonoboRegular;
-	}
-
-	.contributor-person {
-		margin-bottom: 0.5em;
 	}
 }
