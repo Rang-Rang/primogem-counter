@@ -298,6 +298,7 @@ nav ul li a:hover::after {
 	background-color: var(--clr-neutral-dark);
 	padding-left: 1em;
 	padding-block: 1em;
+	margin-bottom: 0;
 }
 
 .footer a {
@@ -306,6 +307,50 @@ nav ul li a:hover::after {
 }
 
 .footer span {
+	color: var(--clr-accent);
+}
+
+/* Contributors Section: */
+
+.main-contributors {
+	font-family: BonoboBold;
+	font-size: 1em;
+	margin-left: 4em;
+	margin-top: 2em;
+}
+
+.contributor-img {
+	width: 100%;
+}
+
+/* .contributor-title {
+	color: var(--clr-font);
+	margin-bottom: 1em;
+} */
+
+.contributor-person {
+	color: var(--clr-font);
+	margin-bottom: .5em;
+}
+
+.contributor-person a {
+	text-decoration: none;
+	color: var(--clr-accent);
+}
+
+.footer-bottom {
+	font-family: BonoboRegular;
+	background-color: var(--clr-neutral-dark);
+	color: var(--clr-font);
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	padding: 20px;
+}
+
+.footer-bottom span {
 	color: var(--clr-accent);
 }
 
@@ -355,5 +400,14 @@ nav ul li a:hover::after {
 		justify-content: center;
 		flex-direction: row;
 		gap: 5em;
+	}
+
+	.main-contributors {
+		font-size: 1.5em;
+		font-family: BonoboRegular;
+	}
+
+	.contributor-person {
+		margin-bottom: 0.5em;
 	}
 }
