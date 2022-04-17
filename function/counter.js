@@ -28,7 +28,7 @@ const onChangeHandler = () => {
 		return;
 	}
 	if (welkins.checked == true) {
-		let totals = primogems + 90;
+		let totals = primogems + (days.value * 90);
 		total.innerHTML = totals;
 		welkinDisplay.innerHTML = days.value + " Day";
 		dayDisplay.innerHTML = days.value;
