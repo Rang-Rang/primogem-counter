@@ -20,7 +20,7 @@ const onChangeHandler = () => {
 		return;
 	}
 	if (welkins.checked == true && bp.checked == true) {
-		let totals = primogems + 90 + 600;
+		let totals = (primogems + 680) + (days.value * 90);
 		total.innerHTML = totals;
 		welkinDisplay.innerHTML = days.value + " Day";
 		dayDisplay.innerHTML = days.value;
@@ -36,7 +36,7 @@ const onChangeHandler = () => {
 		return;
 	}
 	if (bp.checked == true) {
-		let totals = primogems + 600;
+		let totals = primogems + 680;
 		total.innerHTML = totals;
 		welkinDisplay.innerHTML = days.value + " Day";
 		dayDisplay.innerHTML = days.value;
