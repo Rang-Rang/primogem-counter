@@ -54,6 +54,12 @@ nav {
 	padding-bottom: var(--spacing);
 }
 
+.text-random p {
+	font-family: BonoboRegular;
+	font-size: 1.5rem;
+	color: var(--clr-font);
+}
+
 .nav-toggle {
 	display: none;
 }
@@ -342,6 +348,12 @@ nav ul li a:hover::after {
 @media screen and (min-width: 1000px) {
 	.nav-toggle-label {
 		display: none;
+	}
+	
+	.text-random {
+		margin-top: 100px;
+		margin-left: 20px;
+		position: absolute;
 	}
 
 	header {
